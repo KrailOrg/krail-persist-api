@@ -18,10 +18,16 @@ package uk.q3c.krail.persist;
  * configuration object
  * <p>
  *
+ * @param <K> the key type used as an identifier, usually I18NKey
  * @param <C> for fluency
  *            Created by David Sowerby on 01/07/15.
  */
-public interface PersistenceInfo<C> {
+public interface PersistenceInfo<K, C> {
+
+
+    C nameKey(K nameKey);
+
+    C descriptionKey(K nameKey);
 
     C connectionUrl(String url);
 
@@ -36,6 +42,10 @@ public interface PersistenceInfo<C> {
     String getDescription();
 
     String getName();
+
+    K getDescriptionKey();
+
+    K getNameKey();
 
     String getConnectionUrl();
 
