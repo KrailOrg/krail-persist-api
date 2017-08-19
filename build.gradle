@@ -45,8 +45,7 @@ sourceCompatibility = '1.8'
 
 
 kaytee {
-    baseVersion = "0.9.1.0"
-    generateChangeLog=false
+    baseVersion = "0.10.0.0"
 
     unitTest{
         enabled = false
@@ -59,8 +58,6 @@ bintray {
 
 dependencies {
 
-    compile 'uk.q3c.krail:krail-i18n-api:0.10.1.0.01eff1f'
-    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
 
 
 }
