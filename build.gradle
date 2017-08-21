@@ -42,10 +42,10 @@ repositories {
 
 
 sourceCompatibility = '1.8'
-
+ext.guiceVersion = '4.1.0'
 
 kaytee {
-    baseVersion = "0.12.0.0"
+    baseVersion = "0.13.0.0"
 
     unitTest{
         enabled = false
@@ -59,7 +59,7 @@ bintray {
 
 dependencies {
 
-
+    compile "com.google.inject:guice:$guiceVersion"
 
 }
 
