@@ -15,7 +15,6 @@ buildscript {
     ext.kaytee_plugin_version = "0.18.10.0"
     repositories {
         jcenter()
-        mavenLocal()
     }
 
     dependencies {
@@ -44,9 +43,11 @@ sourceCompatibility = '1.8'
 ext.guiceVersion = '4.1.0'
 
 kaytee {
-    baseVersion = "0.13.0.0"
+    version {
+        number = "0.13.0.1"
+    }
 
-    unitTest{
+    unitTest {
         enabled = false
     }
 }
