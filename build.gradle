@@ -11,7 +11,7 @@
  *
  */
 buildscript {
-    ext.kotlin_version = '1.1.4-3'
+    ext.kotlin_version = '1.2.10'
     ext.kaytee_plugin_version = "0.18.10.0"
     repositories {
         jcenter()
@@ -44,7 +44,7 @@ ext.guiceVersion = '4.1.0'
 
 kaytee {
     version {
-        number = "0.13.0.1"
+        number = "0.14.0.0"
     }
 
     unitTest {
@@ -71,5 +71,5 @@ idea {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.0.1'
+    gradleVersion = '4.4.1'
 }
