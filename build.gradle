@@ -11,8 +11,8 @@
  *
  */
 buildscript {
-    ext.kotlin_version = '1.2.10'
-    ext.kaytee_plugin_version = "0.18.10.0"
+    ext.kotlin_version = '1.2.31'
+    ext.kaytee_plugin_version = "0.20.1.0"
     repositories {
         jcenter()
     }
@@ -44,7 +44,7 @@ ext.guiceVersion = '4.1.0'
 
 kaytee {
     version {
-        number = "0.14.0.0"
+        number = "0.15.0.0"
     }
 
     unitTest {
